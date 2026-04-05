@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's showtime</title>
+
+<style>
+        .Name{  
+            padding-left: 30px;
+            text-align: center;
+            color:brown;
+            text-align:left;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;  
+        }
+        .upload-section {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .upload-section h2 {
+            margin: 0;
+        }
+        .upload-quiz{
+            text-align:left;
+            background-color: brown;
+            color: white;
+            border-style:none;
+            padding: 10px 5px;
+            font-size: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: fit-content;
+
+        }
+        .quiz-row{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .quiz-row img {
+           width: 330px;
+           height: 550px;
+           object-fit: cover;
+           border-radius: 10px;
+           transition: 0.3s;
+        }
+        .quiz-row img:hover{
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(255,255,255,0.2)
+        }
+        .home-container{
+            display:flex;
+            align-items: left;
+            flex-direction: column;
+            gap:60px;
+            padding:50px;
+            font-size:25px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:brown;
+        }
+        .text-home{
+                color:white; 
+                
+        }  
+        .icons{
+            margin-top: 20px;
+            gap: 15px;
+            display:flex;
+
+            
+        }
+        body{
+            background-color:black;
+        }
+        header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 95%;
+                padding: 15px 20px;
+                display:flex;
+                justify-content: flex-end;
+        }
+        nav {
+                display: flex;
+                gap: 40px;
+                font-size: 28px; 
+                margin-left: 16px;
+                width: 40%;
+        }
+    
+        .button{
+                color: white;
+                display: inline-block;
+                padding: 5px 5px;
+                text-decoration: none;
+                transition: 0.3s;
+            
+        }
+
+        .button:hover{
+                background-color: brown;
+                color: white;
+                border-color: brown;
+        }
+        
+      
+           
+      
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+<header>
+<nav>
+
+    <a href = "index.html" class ="button">HOME</a>
+    <a href = "quiz.html" class = "button">QUIZ</a>
+    <a href = "laboratory.html"class = "button">LABORATORY</a>
+    <a href = "exam.html" class = "button">EXAM</a>
+
+</nav>
+</header>
+
+
+<!-- NAME  -->
+    <div class ="Name">
+        <h1>LABORATORY</h1>
+        
+    </div>
+
+
+<!--UPLOAD AND SUBMIT IMAGES -->
+<section class ="home-container">
+    <div class="upload-section">
+        <h2>UPLOAD YOUR LABORATORY:</h2>
+
+
+     <div class = "upload-quiz">
+            <form onsubmit="alert('Uploaded Image')">
+                <input type = "text" placeholder="Title">
+                <input type = "file">
+                <button type = "submit"> Submit </button>
+            </form>
+    </div>
+    </div>
+
+
+</section>
+</body>
+</html>
