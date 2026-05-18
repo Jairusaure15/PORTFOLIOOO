@@ -6,7 +6,7 @@
     <title>It's showtime</title>
 
 <style>
-        .Name{  
+      .Name{  
             padding-left: 30px;
             text-align: center;
             color:brown;
@@ -106,12 +106,67 @@
                 color: white;
                 border-color: brown;
         }
-        
-      
            
-      
+        /* TABLET + CELLPHONE */
+        @media(max-width:1024px){
 
+        header{
+               justify-content:center;
+               padding:10px;
+        }
 
+        nav{
+                width:100%;
+                justify-content:center;
+                flex-wrap:wrap;
+                gap:15px;
+                font-size:18px;
+        }
+
+        .Name{
+                padding-top:100px;
+                padding-left:0;
+                text-align:center;
+        }
+
+        .Name h1{
+                font-size:40px;
+        }
+
+        .home-container{
+                padding:20px;
+                gap:40px;
+                font-size:18px;
+        }
+
+        .quiz-row{
+                flex-direction:column;
+                text-align:center;
+                gap:20px;
+        }
+
+        .quiz-row img{
+                width:100%;
+                max-width:300px;
+                height:auto;
+        }
+
+        .upload-quiz form{
+                display:flex;
+                flex-direction:column;
+                gap:10px;
+        }
+
+                input,
+                button{
+                width:100%;
+        }
+
+        .icons{
+                justify-content:center;
+                flex-wrap:wrap;
+        }
+        }
     </style>
 
 
